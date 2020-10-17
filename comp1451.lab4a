@@ -1,9 +1,9 @@
-package ca.bcit.comp1451.jamesxale.lab4;
+package ca.bcit.comp1451.jamesalex.lab4a;
 
 import java.util.Random;
 
 /**
- * @author jamesmoffat and Xale
+ * @author jamesmoffat and Alex
  *
  */
 public class Mathematics 
