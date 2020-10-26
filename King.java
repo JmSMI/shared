@@ -9,13 +9,12 @@ public class King extends ChessPiece
 {
 
 	/**
-	 * @param isPieceWhite, true if the piece is white false if the piece is black
+	 * @param isPiwhiteceWhite, true if the piece is white false if the piece is black
 	 */
-	public King(boolean isPieceWhite) 
+	public King(boolean white) 
 	{
-		super(isPieceWhite);
+		super(white);
 	}
-	
 	
 	//methods
 	
