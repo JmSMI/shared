@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @version 1.0
  * main method
  */
-public class main 
+public class Main 
 {
 	
 	public static final int BLACK_PIECE_ROW = 0;
@@ -18,17 +18,15 @@ public class main
 	public static final int WHITE_PAWN_ROW  = 6;
 	public static final int WHITE_PIECE_ROW = 7;
 	
-	public static final int FIRST_ROOK   = 0;
-	public static final int FIRST_KNIGHT = 1;
-	public static final int FIRST_BISHOP = 2;
-	public static final int FIRST_QUEEN  = 3;
-	public static final int FIRST_KING   = 4;
+	public static final int QUEEN = 3;
+	public static final int KING  = 4;
 	
-	public static final int SECOND_ROOK   = 0;
-	public static final int SECOND_KNIGHT = 1;
-	public static final int SECOND_BISHOP = 2;
-	public static final int SECOND_QUEEN  = 3;
-	public static final int SECOND_KING   = 4;
+	public static final int FIRST_ROOK    = 0;
+	public static final int FIRST_KNIGHT  = 1;
+	public static final int FIRST_BISHOP  = 2;
+	public static final int SECOND_ROOK   = 7;
+	public static final int SECOND_KNIGHT = 6;
+	public static final int SECOND_BISHOP = 5;
 	
 	public static final int FIRST_PAWN   = 0;
 	public static final int SECOND_PAWN  = 1;
@@ -58,8 +56,8 @@ public class main
 		chessPieces[WHITE_PIECE_ROW][FIRST_ROOK]    = new Rook(false);
 		chessPieces[WHITE_PIECE_ROW][FIRST_KNIGHT]  = new Knight(false);
 		chessPieces[WHITE_PIECE_ROW][FIRST_BISHOP]  = new Bishop(false);
-		chessPieces[WHITE_PIECE_ROW][FIRST_QUEEN]   = new Queen(false);
-		chessPieces[WHITE_PIECE_ROW][FIRST_KING]    = new King(false);
+		chessPieces[WHITE_PIECE_ROW][QUEEN]         = new Queen(false);
+		chessPieces[WHITE_PIECE_ROW][KING]          = new King(false);
 		chessPieces[WHITE_PIECE_ROW][SECOND_BISHOP] = new Bishop(false);
 		chessPieces[WHITE_PIECE_ROW][SECOND_KNIGHT] = new Knight(false);
 		chessPieces[WHITE_PIECE_ROW][SECOND_ROOK]   = new Rook(false);
@@ -75,8 +73,8 @@ public class main
 		chessPieces[BLACK_PIECE_ROW][FIRST_ROOK]    = new Rook(false);
 		chessPieces[BLACK_PIECE_ROW][FIRST_KNIGHT]  = new Knight(false);
 		chessPieces[BLACK_PIECE_ROW][FIRST_BISHOP]  = new Bishop(false);
-		chessPieces[BLACK_PIECE_ROW][FIRST_QUEEN]   = new Queen(false);
-		chessPieces[BLACK_PIECE_ROW][FIRST_KING]    = new King(false);
+		chessPieces[BLACK_PIECE_ROW][QUEEN]         = new Queen(false);
+		chessPieces[BLACK_PIECE_ROW][KING]          = new King(false);
 		chessPieces[BLACK_PIECE_ROW][SECOND_BISHOP] = new Bishop(false);
 		chessPieces[BLACK_PIECE_ROW][SECOND_KNIGHT] = new Knight(false);
 		chessPieces[BLACK_PIECE_ROW][SECOND_ROOK]   = new Rook(false);
