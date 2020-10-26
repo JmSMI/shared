@@ -3,7 +3,6 @@
  */
 package ca.bcit.comp1451.jamesmoffat.zacharymartin.lab6a;
 
-import java.util.ArrayList;
 
 /**
  * @author James Moffat and Zachary Martin
@@ -12,11 +11,11 @@ import java.util.ArrayList;
  */
 public class Main 
 {
-	
-	public static final int BLACK_PIECE_ROW = 0;
-	public static final int BLACK_PAWN_ROW  = 1;
-	public static final int WHITE_PAWN_ROW  = 6;
-	public static final int WHITE_PIECE_ROW = 7;
+	public static final int MAX_ARRAY_LENGTH = 8;
+	public static final int BLACK_PIECE_ROW  = 0;
+	public static final int BLACK_PAWN_ROW   = 1;
+	public static final int WHITE_PAWN_ROW   = 6;
+	public static final int WHITE_PIECE_ROW  = 7;
 	
 	public static final int QUEEN = 3;
 	public static final int KING  = 4;
@@ -42,33 +41,23 @@ public class Main
 	 */
 	public static void main(String[] args) 
 	{
-		//testing things: hybrid print calls
-		//Pawn pawn = new Pawn(true);
-		//System.out.println(pawn.getClass().getSimpleName());
-		//System.out.println(pawn.getClass().getSimpleName().equals("Pawn"));
-		//Knight knight = new Knight(true);
-		//Bishop bishop = new Bishop(true);
-		//Rook rook = new Rook(true);
-		//Queen queen = new Queen(true);
-		//King king = new King(true);
-
-		ChessPiece[][] chessPieces = new ChessPiece[8][8];
-		chessPieces[WHITE_PIECE_ROW][FIRST_ROOK]    = new Rook(false);
-		chessPieces[WHITE_PIECE_ROW][FIRST_KNIGHT]  = new Knight(false);
-		chessPieces[WHITE_PIECE_ROW][FIRST_BISHOP]  = new Bishop(false);
-		chessPieces[WHITE_PIECE_ROW][QUEEN]         = new Queen(false);
-		chessPieces[WHITE_PIECE_ROW][KING]          = new King(false);
-		chessPieces[WHITE_PIECE_ROW][SECOND_BISHOP] = new Bishop(false);
-		chessPieces[WHITE_PIECE_ROW][SECOND_KNIGHT] = new Knight(false);
-		chessPieces[WHITE_PIECE_ROW][SECOND_ROOK]   = new Rook(false);
-		chessPieces[WHITE_PAWN_ROW][FIRST_PAWN]     = new Pawn(false);
-		chessPieces[WHITE_PAWN_ROW][SECOND_PAWN]    = new Pawn(false);
-		chessPieces[WHITE_PAWN_ROW][THIRD_PAWN]     = new Pawn(false);
-		chessPieces[WHITE_PAWN_ROW][FOURTH_PAWN]    = new Pawn(false);
-		chessPieces[WHITE_PAWN_ROW][FIFTH_PAWN]     = new Pawn(false);
-		chessPieces[WHITE_PAWN_ROW][SIXTH_PAWN]     = new Pawn(false);
-		chessPieces[WHITE_PAWN_ROW][SEVENTH_PAWN]   = new Pawn(false);
-		chessPieces[WHITE_PAWN_ROW][EIGTH_PAWN]     = new Pawn(false);
+		ChessPiece[][] chessPieces = new ChessPiece[MAX_ARRAY_LENGTH][MAX_ARRAY_LENGTH];
+		chessPieces[WHITE_PIECE_ROW][FIRST_ROOK]    = new Rook(true);
+		chessPieces[WHITE_PIECE_ROW][FIRST_KNIGHT]  = new Knight(true);
+		chessPieces[WHITE_PIECE_ROW][FIRST_BISHOP]  = new Bishop(true);
+		chessPieces[WHITE_PIECE_ROW][QUEEN]         = new Queen(true);
+		chessPieces[WHITE_PIECE_ROW][KING]          = new King(true);
+		chessPieces[WHITE_PIECE_ROW][SECOND_BISHOP] = new Bishop(true);
+		chessPieces[WHITE_PIECE_ROW][SECOND_KNIGHT] = new Knight(true);
+		chessPieces[WHITE_PIECE_ROW][SECOND_ROOK]   = new Rook(true);
+		chessPieces[WHITE_PAWN_ROW][FIRST_PAWN]     = new Pawn(true);
+		chessPieces[WHITE_PAWN_ROW][SECOND_PAWN]    = new Pawn(true);
+		chessPieces[WHITE_PAWN_ROW][THIRD_PAWN]     = new Pawn(true);
+		chessPieces[WHITE_PAWN_ROW][FOURTH_PAWN]    = new Pawn(true);
+		chessPieces[WHITE_PAWN_ROW][FIFTH_PAWN]     = new Pawn(true);
+		chessPieces[WHITE_PAWN_ROW][SIXTH_PAWN]     = new Pawn(true);
+		chessPieces[WHITE_PAWN_ROW][SEVENTH_PAWN]   = new Pawn(true);
+		chessPieces[WHITE_PAWN_ROW][EIGTH_PAWN]     = new Pawn(true);
 		
 		chessPieces[BLACK_PIECE_ROW][FIRST_ROOK]    = new Rook(false);
 		chessPieces[BLACK_PIECE_ROW][FIRST_KNIGHT]  = new Knight(false);
