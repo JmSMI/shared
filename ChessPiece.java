@@ -14,34 +14,34 @@ public class ChessPiece
 	private final int QUEEN_VALUE  = 9;
 	private final int KING_VALUE   = 1000;
 	
-	private boolean isPieceWhite;
-	int value;
+	private boolean white;
+	private int value;
 	
 	/**
-	 * @param isPieceWhite, true if the piece is white false if the piece is black
+	 * @param white, true if the piece is white false if the piece is black
 	 */
-	public ChessPiece(boolean isPieceWhite)
+	public ChessPiece(boolean white)
 	{
-		this.isPieceWhite = isPieceWhite;
+		this.white = white;
 		setValue(); 
 	}
 
 	//getters setters
 	
 	/**
-	 * @return the isPieceWhite boolean returns true if the piece is white, false if the piece is black
+	 * @return the white boolean returns true if the piece is white, false if the piece is black
 	 */
 	public boolean isPieceWhite() 
 	{
-		return isPieceWhite;
+		return white;
 	}
 
 	/**
-	 * @param isPieceWhite boolean true if the piece is white, false if the piece is black
+	 * @param white boolean true if the piece is white, false if the piece is black
 	 */
-	public void setPieceWhite(boolean isPieceWhite) 
+	public void setPieceWhite(boolean white) 
 	{
-		this.isPieceWhite = isPieceWhite;
+		this.white = white;
 	}
 
 	/**
@@ -99,18 +99,11 @@ public class ChessPiece
 	@Override
 	public String toString()
 	{
-		String pieceColor = "unknown";
-		if(isPieceWhite == true)
+		if(white == true)
 		{
-			pieceColor = "White";
+			return "White" + " " + this.getClass().getSimpleName();
 		}
-		else
-		{
-			pieceColor = "Black";
-		}
-		
-		return pieceColor + " " + this.getClass().getSimpleName();
+		return "Black" + " " + this.getClass().getSimpleName();		
 	}
-	
 
 }

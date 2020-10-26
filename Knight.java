@@ -9,13 +9,12 @@ public class Knight extends ChessPiece
 {
 
 	/**
-	 * @param isPieceWhite, true if the piece is white false if the piece is black
+	 * @param white, true if the piece is white false if the piece is black
 	 */
-	public Knight(boolean isPieceWhite) 
+	public Knight(boolean white) 
 	{
-		super(isPieceWhite);
+		super(white);
 	}
-	
 	
 	//methods
 	
@@ -27,7 +26,6 @@ public class Knight extends ChessPiece
 	{
 		return super.toString() + "(" + getValue() + ")";
 	}
-		
 	
 	/**
 	 * prints how this particular piece moves

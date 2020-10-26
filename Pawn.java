@@ -9,13 +9,12 @@ public class Pawn extends ChessPiece
 {
 
 	/**
-	 * @param isPieceWhite, true if the piece is white false if the piece is black
+	 * @param white, true if the piece is white false if the piece is black
 	 */
-	public Pawn(boolean isPieceWhite) 
+	public Pawn(boolean white) 
 	{
-		super(isPieceWhite);
+		super(white);
 	}
-	
 	
 	//methods
 	
@@ -28,7 +27,6 @@ public class Pawn extends ChessPiece
 		return super.toString() + "(" + getValue() + ")";
 	}
 	
-	
 	/**
 	 * prints how this particular piece moves
 	 */
@@ -37,6 +35,4 @@ public class Pawn extends ChessPiece
 	{
 		System.out.println("forward 1");
 	}
-	
-
 }
