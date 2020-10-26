@@ -9,11 +9,11 @@ public class Bishop extends ChessPiece
 {
 
 	/**
-	 * @param isPieceWhite, true if the piece is white false if the piece is black
+	 * @param white, true if the piece is white false if the piece is black
 	 */
-	public Bishop(boolean isPieceWhite) 
+	public Bishop(boolean white) 
 	{
-		super(isPieceWhite);
+		super(white);
 	}
 	
 	
