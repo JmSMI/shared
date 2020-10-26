@@ -12,6 +12,32 @@ import java.util.ArrayList;
  */
 public class main 
 {
+	
+	public static final int BLACK_PIECE_ROW = 0;
+	public static final int BLACK_PAWN_ROW  = 1;
+	public static final int WHITE_PAWN_ROW  = 6;
+	public static final int WHITE_PIECE_ROW = 7;
+	
+	public static final int FIRST_ROOK   = 0;
+	public static final int FIRST_KNIGHT = 1;
+	public static final int FIRST_BISHOP = 2;
+	public static final int FIRST_QUEEN  = 3;
+	public static final int FIRST_KING   = 4;
+	
+	public static final int SECOND_ROOK   = 0;
+	public static final int SECOND_KNIGHT = 1;
+	public static final int SECOND_BISHOP = 2;
+	public static final int SECOND_QUEEN  = 3;
+	public static final int SECOND_KING   = 4;
+	
+	public static final int FIRST_PAWN   = 0;
+	public static final int SECOND_PAWN  = 1;
+	public static final int THIRD_PAWN   = 2;
+	public static final int FOURTH_PAWN  = 3;
+	public static final int FIFTH_PAWN   = 4;
+	public static final int SIXTH_PAWN   = 5;
+	public static final int SEVENTH_PAWN = 6;
+	public static final int EIGTH_PAWN   = 7;
 
 	/**
 	 * main method. prints the chess board
@@ -27,32 +53,6 @@ public class main
 		//Rook rook = new Rook(true);
 		//Queen queen = new Queen(true);
 		//King king = new King(true);
-
-		public static final int BLACK_PIECE_ROW = 0;
-		public static final int BLACK_PAWN_ROW  = 1;
-		public static final int WHITE_PAWN_ROW  = 6;
-		public static final int WHITE_PIECE_ROW = 7;
-		
-		public static final int FIRST_ROOK   = 0;
-		public static final int FIRST_KNIGHT = 1;
-		public static final int FIRST_BISHOP = 2;
-		public static final int FIRST_QUEEN  = 3;
-		public static final int FIRST_KING   = 4;
-		
-		public static final int SECOND_ROOK   = 0;
-		public static final int SECOND_KNIGHT = 1;
-		public static final int SECOND_BISHOP = 2;
-		public static final int SECOND_QUEEN  = 3;
-		public static final int SECOND_KING   = 4;
-		
-		public static final int FIRST_PAWN   = 0;
-		public static final int SECOND_PAWN  = 1;
-		public static final int THIRD_PAWN   = 2;
-		public static final int FOURTH_PAWN  = 3;
-		public static final int FIFTH_PAWN   = 4;
-		public static final int SIXTH_PAWN   = 5;
-		public static final int SEVENTH_PAWN = 6;
-		public static final int EIGTH_PAWN   = 7;
 
 		ChessPiece[][] chessPieces = new ChessPiece[8][8];
 		chessPieces[WHITE_PIECE_ROW][FIRST_ROOK]    = new Rook(false);
