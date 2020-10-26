@@ -9,13 +9,12 @@ public class Rook extends ChessPiece
 {
 
 	/**
-	 * @param isPieceWhite, true if the piece is white false if the piece is black
+	 * @param white, true if the piece is white false if the piece is black
 	 */
-	public Rook(boolean isPieceWhite) 
+	public Rook(boolean white) 
 	{
-		super(isPieceWhite);
+		super(white);
 	}
-	
 	
 	//methods
 	
@@ -28,7 +27,6 @@ public class Rook extends ChessPiece
 		return super.toString() + "(" + getValue() + ")";
 	}
 	
-	
 	/**
 	 * prints how this particular piece moves
 	 */
@@ -37,5 +35,5 @@ public class Rook extends ChessPiece
 	{
 		System.out.println("horizontally or vertically");
 	}
-
+	
 }
