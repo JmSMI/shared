@@ -50,11 +50,13 @@ public class Main {
 		{
 			for(int col = 0; col < board[row].length; col ++)
 			{
-				System.out.print(board[row][col]);
+				if(board[row][col] != null)
+					{
+						System.out.print(board[row][col] + " ");
+					}
 			}
 			System.out.println();
 		}
 	}
 
 }
-
